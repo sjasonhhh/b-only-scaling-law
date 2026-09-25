@@ -1,0 +1,835 @@
+{
+  "frozen_on": "2026-09-25",
+  "root": ".",
+  "roles": {
+    "pythia_training_log_existing.csv": "fit_base",
+    "cerebras_training_log.csv": "feedback_family",
+    "scaling_baseline.csv": "locked_external",
+    "published_scaling_data.csv": "locked_external",
+    "supplementary_NQ_experiment.csv": "fit_quality",
+    "supplementary_NQ_experiment_expanded.csv": "quality_new90_validation",
+    "supplementary_NQ_experiment_large.csv": "stress_quality",
+    "supplementary_large_models.csv": "large_model_scenario",
+    "supplementary_large_baseline.csv": "estimated_loss_scenario",
+    "open_model_family_metadata.csv": "metadata_only",
+    "pythia_checkpoint_index.csv": "metadata_only"
+  },
+  "files": [
+    {
+      "file": "real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "role": "feedback_family",
+      "sha256": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6",
+      "rows": 1029,
+      "columns": 15,
+      "field_names": [
+        "run_id",
+        "N_params_B",
+        "D_tokens_B",
+        "C_FLOPs_1e21",
+        "steps",
+        "batch_tokens_M",
+        "lr",
+        "wd",
+        "precision",
+        "gpu_days",
+        "step_time_ms",
+        "train_loss",
+        "val_loss",
+        "ppl",
+        "grad_norm_avg"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/open_model_family_metadata.csv",
+      "role": "metadata_only",
+      "sha256": "641682f0ea6c46f25a0188ac723af44e0bc2e27c760e744743a15e97e29ee064",
+      "rows": 18,
+      "columns": 8,
+      "field_names": [
+        "family",
+        "model_repo",
+        "config_bytes",
+        "readme_bytes",
+        "weight_file_count",
+        "weight_total_bytes",
+        "source_url",
+        "error"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "role": "locked_external",
+      "sha256": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd",
+      "rows": 44,
+      "columns": 6,
+      "field_names": [
+        "family",
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "source",
+        "is_converged"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/pythia_checkpoint_index.csv",
+      "role": "metadata_only",
+      "sha256": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed",
+      "rows": 1386,
+      "columns": 5,
+      "field_names": [
+        "model_repo",
+        "model_size",
+        "step",
+        "branch",
+        "commit"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "role": "fit_base",
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+      "rows": 1176,
+      "columns": 15,
+      "field_names": [
+        "run_id",
+        "N_params_B",
+        "D_tokens_B",
+        "C_FLOPs_1e21",
+        "steps",
+        "batch_tokens_M",
+        "lr",
+        "wd",
+        "precision",
+        "gpu_days",
+        "step_time_ms",
+        "train_loss",
+        "val_loss",
+        "ppl",
+        "grad_norm_avg"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "role": "locked_external",
+      "sha256": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+      "rows": 57,
+      "columns": 5,
+      "field_names": [
+        "family",
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "is_converged"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "role": "fit_quality",
+      "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+      "rows": 360,
+      "columns": 5,
+      "field_names": [
+        "experiment_id",
+        "N_params_B",
+        "D_tokens_B",
+        "Q_score",
+        "val_loss"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+      "role": "quality_new90_validation",
+      "sha256": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a",
+      "rows": 450,
+      "columns": 5,
+      "field_names": [
+        "experiment_id",
+        "N_params_B",
+        "D_tokens_B",
+        "Q_score",
+        "val_loss"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv",
+      "role": "stress_quality",
+      "sha256": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+      "rows": 1704,
+      "columns": 6,
+      "field_names": [
+        "experiment_id",
+        "N_params_B",
+        "D_tokens_B",
+        "Q_score",
+        "val_loss",
+        "data_type"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+      "role": "estimated_loss_scenario",
+      "sha256": "a240e210c5b37444356c28eea96c6cc36be79c29baae1621c2e08aff727ccfeb",
+      "rows": 128,
+      "columns": 5,
+      "field_names": [
+        "family",
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "is_converged"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_large_models.csv",
+      "role": "large_model_scenario",
+      "sha256": "ee794c1c586ed33c485a9eb9a2a3d993790402b63297e9b2765a1387930e940e",
+      "rows": 132,
+      "columns": 8,
+      "field_names": [
+        "model_name",
+        "N_params_B",
+        "D_tokens_B",
+        "FLOPs",
+        "publication_date",
+        "organization",
+        "accessibility",
+        "country"
+      ]
+    }
+  ],
+  "training_trajectory_files": [
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv",
+      "sha256": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440",
+      "rows": 500,
+      "columns": 5,
+      "field_names": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv",
+      "sha256": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124",
+      "rows": 500,
+      "columns": 5,
+      "field_names": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv",
+      "sha256": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170",
+      "rows": 500,
+      "columns": 5,
+      "field_names": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv",
+      "sha256": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0",
+      "rows": 500,
+      "columns": 5,
+      "field_names": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv",
+      "sha256": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f",
+      "rows": 500,
+      "columns": 5,
+      "field_names": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv",
+      "sha256": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e",
+      "rows": 500,
+      "columns": 5,
+      "field_names": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv",
+      "sha256": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482",
+      "rows": 500,
+      "columns": 5,
+      "field_names": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ]
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv",
+      "sha256": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054",
+      "rows": 500,
+      "columns": 5,
+      "field_names": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ]
+    }
+  ],
+  "data_quality_checks": [
+    {
+      "file": "real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "rows": 1029,
+      "columns": 15,
+      "expected_fields": [
+        "run_id",
+        "N_params_B",
+        "D_tokens_B",
+        "C_FLOPs_1e21",
+        "steps",
+        "batch_tokens_M",
+        "lr",
+        "wd",
+        "precision",
+        "gpu_days",
+        "step_time_ms",
+        "train_loss",
+        "val_loss",
+        "ppl",
+        "grad_norm_avg"
+      ],
+      "key_fields": [
+        "run_id",
+        "steps"
+      ],
+      "missing_cells": 3087,
+      "missing_by_field": {
+        "gpu_days": 1029,
+        "step_time_ms": 1029,
+        "grad_norm_avg": 1029
+      },
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/open_model_family_metadata.csv",
+      "rows": 18,
+      "columns": 8,
+      "expected_fields": [
+        "family",
+        "model_repo",
+        "config_bytes",
+        "readme_bytes",
+        "weight_file_count",
+        "weight_total_bytes",
+        "source_url",
+        "error"
+      ],
+      "key_fields": [
+        "family",
+        "model_repo"
+      ],
+      "missing_cells": 18,
+      "missing_by_field": {
+        "error": 18
+      },
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "rows": 44,
+      "columns": 6,
+      "expected_fields": [
+        "family",
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "source",
+        "is_converged"
+      ],
+      "key_fields": [
+        "family",
+        "N_params_B",
+        "D_tokens_B"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/pythia_checkpoint_index.csv",
+      "rows": 1386,
+      "columns": 5,
+      "expected_fields": [
+        "model_repo",
+        "model_size",
+        "step",
+        "branch",
+        "commit"
+      ],
+      "key_fields": [
+        "model_repo",
+        "step",
+        "branch"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "rows": 1176,
+      "columns": 15,
+      "expected_fields": [
+        "run_id",
+        "N_params_B",
+        "D_tokens_B",
+        "C_FLOPs_1e21",
+        "steps",
+        "batch_tokens_M",
+        "lr",
+        "wd",
+        "precision",
+        "gpu_days",
+        "step_time_ms",
+        "train_loss",
+        "val_loss",
+        "ppl",
+        "grad_norm_avg"
+      ],
+      "key_fields": [
+        "run_id"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "rows": 57,
+      "columns": 5,
+      "expected_fields": [
+        "family",
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "is_converged"
+      ],
+      "key_fields": [
+        "family",
+        "N_params_B",
+        "D_tokens_B"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "rows": 360,
+      "columns": 5,
+      "expected_fields": [
+        "experiment_id",
+        "N_params_B",
+        "D_tokens_B",
+        "Q_score",
+        "val_loss"
+      ],
+      "key_fields": [
+        "experiment_id"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+      "rows": 450,
+      "columns": 5,
+      "expected_fields": [
+        "experiment_id",
+        "N_params_B",
+        "D_tokens_B",
+        "Q_score",
+        "val_loss"
+      ],
+      "key_fields": [
+        "experiment_id"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv",
+      "rows": 1704,
+      "columns": 6,
+      "expected_fields": [
+        "experiment_id",
+        "N_params_B",
+        "D_tokens_B",
+        "Q_score",
+        "val_loss",
+        "data_type"
+      ],
+      "key_fields": [
+        "experiment_id"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+      "rows": 128,
+      "columns": 5,
+      "expected_fields": [
+        "family",
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "is_converged"
+      ],
+      "key_fields": [
+        "family",
+        "N_params_B",
+        "D_tokens_B"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/supplementary_large_models.csv",
+      "rows": 132,
+      "columns": 8,
+      "expected_fields": [
+        "model_name",
+        "N_params_B",
+        "D_tokens_B",
+        "FLOPs",
+        "publication_date",
+        "organization",
+        "accessibility",
+        "country"
+      ],
+      "key_fields": [
+        "model_name"
+      ],
+      "missing_cells": 15,
+      "missing_by_field": {
+        "FLOPs": 11,
+        "organization": 1,
+        "accessibility": 2,
+        "country": 1
+      },
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv",
+      "rows": 500,
+      "columns": 5,
+      "expected_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ],
+      "key_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "step"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv",
+      "rows": 500,
+      "columns": 5,
+      "expected_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ],
+      "key_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "step"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv",
+      "rows": 500,
+      "columns": 5,
+      "expected_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ],
+      "key_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "step"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv",
+      "rows": 500,
+      "columns": 5,
+      "expected_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ],
+      "key_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "step"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv",
+      "rows": 500,
+      "columns": 5,
+      "expected_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ],
+      "key_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "step"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv",
+      "rows": 500,
+      "columns": 5,
+      "expected_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ],
+      "key_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "step"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv",
+      "rows": 500,
+      "columns": 5,
+      "expected_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ],
+      "key_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "step"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    },
+    {
+      "file": "real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv",
+      "rows": 500,
+      "columns": 5,
+      "expected_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "val_loss",
+        "step",
+        "interpolated"
+      ],
+      "key_fields": [
+        "N_params_B",
+        "D_tokens_B",
+        "step"
+      ],
+      "missing_cells": 0,
+      "missing_by_field": {},
+      "duplicate_rows": 0,
+      "duplicate_key_rows": 0,
+      "nonfinite_numeric_cells": 0,
+      "field_errors": [],
+      "passed": true
+    }
+  ],
+  "overlap_checks": {
+    "b6_rows": 360,
+    "b7_rows": 450,
+    "b6_b7_overlap": 360,
+    "b7_new_rows": 90,
+    "b8_data_type_counts": {
+      "calibrated": 984,
+      "extrapolated": 720
+    }
+  },
+  "split_policy": {
+    "base_fit": [
+      "B1"
+    ],
+    "quality_fit": [
+      "B6"
+    ],
+    "local_grouped_validation": [
+      "B1 complete N groups"
+    ],
+    "quality_new_validation": [
+      "B7 rows not overlapping B6"
+    ],
+    "feedback_validation": [
+      "B2",
+      "B3"
+    ],
+    "locked_external_validation": [
+      "B4",
+      "B5"
+    ],
+    "stress": [
+      "B8"
+    ],
+    "scenario": [
+      "B9",
+      "B10"
+    ],
+    "metadata_only": [
+      "B11",
+      "B12"
+    ]
+  }
+}
