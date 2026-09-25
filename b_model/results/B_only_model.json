@@ -1,0 +1,89 @@
+{
+  "model_name": "B-only additive scaling law",
+  "created_on": "2026-09-25",
+  "target": "val_loss",
+  "base_relation": "L_base(N,D)",
+  "quality_relation": "delta_Q(N,D,Q_score; Q_reference=1.0)",
+  "prediction_relation": "L_B(N,D,Q_score) = L_base(N,D) + delta_Q(N,D,Q_score)",
+  "quality_reference": 1.0,
+  "D_floor_for_missing_scenarios": 0.134,
+  "prediction_interval": {
+    "confidence": 0.9,
+    "z": 1.6448536269514722
+  },
+  "base_model": {
+    "feature_names": [
+      "intercept",
+      "N^-0.25",
+      "D^-0.25",
+      "N^-0.50",
+      "D^-0.50",
+      "log_N",
+      "log_D",
+      "log_N_times_log_D"
+    ],
+    "coefficients": [
+      1.4323519140772016,
+      0.433708344540658,
+      1.300607513530949,
+      0.05422254925532074,
+      0.0630458772688745,
+      0.015043902393090275,
+      0.010342939396128044,
+      1.292392300144242e-08
+    ],
+    "ridge": 1e-10,
+    "residual_scale": 0.0002555419996966576
+  },
+  "quality_effect_model": {
+    "feature_names": [
+      "intercept",
+      "log_N",
+      "log_D",
+      "log_N_times_log_D",
+      "(1-Q)^1",
+      "(1-Q)^2",
+      "(1-Q)^3",
+      "(1-Q)^4",
+      "(1-Q)^5",
+      "(1-Q)^1_times_log_N",
+      "(1-Q)^1_times_log_D",
+      "(1-Q)^2_times_log_N",
+      "(1-Q)^2_times_log_D",
+      "(1-Q)^3_times_log_N",
+      "(1-Q)^3_times_log_D"
+    ],
+    "coefficients": [
+      -0.01268573136526482,
+      -0.00395413593799039,
+      0.003110415509370036,
+      0.0007952873096430271,
+      0.6769719169482509,
+      -0.9344947359620469,
+      1.8802579738602436,
+      -2.522219423311931,
+      1.4751705554944734,
+      -0.06340663628503936,
+      -0.07644837415703035,
+      0.004889935897795161,
+      0.20003411033693516,
+      -0.0013878557535213865,
+      -0.1591418159697707
+    ],
+    "ridge": 1e-10,
+    "residual_scale": 0.05085366829430686
+  },
+  "data_roles": {
+    "pythia_training_log_existing.csv": "fit_base",
+    "cerebras_training_log.csv": "feedback_family",
+    "scaling_baseline.csv": "locked_external",
+    "published_scaling_data.csv": "locked_external",
+    "supplementary_NQ_experiment.csv": "fit_quality",
+    "supplementary_NQ_experiment_expanded.csv": "quality_new90_validation",
+    "supplementary_NQ_experiment_large.csv": "stress_quality",
+    "supplementary_large_models.csv": "large_model_scenario",
+    "supplementary_large_baseline.csv": "estimated_loss_scenario",
+    "open_model_family_metadata.csv": "metadata_only",
+    "pythia_checkpoint_index.csv": "metadata_only"
+  }
+}
