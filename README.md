@@ -9,8 +9,8 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/sjasonhhh/b-only-scaling-law-model.git
-cd b-only-scaling-law-model
+git clone https://github.com/sjasonhhh/b-only-scaling-law.git
+cd b-only-scaling-law
 
 python3 -m venv .venv
 source .venv/bin/activate
