@@ -19,10 +19,12 @@ python3 -m b_model.predict \
 
 预测入口只使用 Python 标准库，Python 3.9 及以上即可运行，不需要访问 PyPI，也不需要安装 `numpy` 或 `pandas`。
 
-Windows PowerShell 激活虚拟环境的命令是：
+Windows PowerShell 不需要激活虚拟环境，直接运行：
 
 ```powershell
-.venv\Scripts\Activate.ps1
+py -3 -m b_model.predict `
+  --input examples/input.csv `
+  --output predictions.csv
 ```
 
 ## 输入格式
@@ -71,24 +73,16 @@ python -m b_model.predict \
   --output path/to/predictions.csv
 ```
 
-## 可选：完整评测环境
+## 开发者验证（可选）
 
-只有需要运行 `pipeline.py`、完整评测或单元测试时，才需要安装可选依赖：
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-如果当前网络无法连接 PyPI，这一步可以跳过；基础预测不受影响。
-
-## 开发者验证
+以下命令只验证发布包的标准库预测入口，同样不需要安装任何第三方依赖：
 
 ```bash
-python -m unittest discover -s b_model/tests -p 'test_*.py' -v
-python -m py_compile b_model/pipeline.py b_model/predict.py
+python3 -S -m unittest b_model.tests.test_predict_stdlib -v
+python3 -S -m py_compile b_model/predict.py
 ```
+
+`requirements.txt` 仅供需要重新拟合或运行完整评测的开发者参考，不是预测运行依赖；`pipeline.py` 的重新拟合还需要另行提供原始实验附件。
 
 ## 发布内容与边界
 
@@ -99,7 +93,7 @@ python -m py_compile b_model/pipeline.py b_model/predict.py
 - `b_model/results/data_freeze_manifest.json`：数据哈希、角色、重叠检查和数据质量记录；
 - `b_model/results/B组数据迭代报告.md`：中文评测报告。
 
-原始实验附件没有随推理发布包上传；因此 `pipeline.py` 的完整重新拟合需要另行提供与冻结清单匹配的原始附件。按照本 README 进行预测只需要模型参数文件和 Python 标准库。
+按照本 README 进行预测只需要模型参数文件和 Python 标准库，不需要创建虚拟环境，也不需要执行 `pip install`。
 
 ## 重要限制
 
