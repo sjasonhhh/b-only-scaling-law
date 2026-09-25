@@ -1,29 +1,10 @@
 # B-only Scaling Law Model
 
-这是问题二 B 组的可复现推理发布包，提供冻结后的
-\(\widehat L_B(N,D,Q_{score})\) 模型参数和 CSV 预测脚本。
-
-本仓库面向只需要使用模型预测的读者：不需要下载原始 B 组附件，也不需要重新拟合模型。
-当前发布版只包含 B-only 模型；A 组配比变量不在本发布包中。
-
-## 快速开始：无需第三方依赖
+## 快速开始
 
 ```bash
-git clone https://github.com/sjasonhhh/b-only-scaling-law.git
-cd b-only-scaling-law
-
 python3 -m b_model.predict \
   --input examples/input.csv \
-  --output predictions.csv
-```
-
-预测入口只使用 Python 标准库，Python 3.9 及以上即可运行，不需要访问 PyPI，也不需要安装 `numpy` 或 `pandas`。
-
-Windows PowerShell 不需要激活虚拟环境，直接运行：
-
-```powershell
-py -3 -m b_model.predict `
-  --input examples/input.csv `
   --output predictions.csv
 ```
 
