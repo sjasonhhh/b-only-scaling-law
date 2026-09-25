@@ -6,20 +6,18 @@
 本仓库面向只需要使用模型预测的读者：不需要下载原始 B 组附件，也不需要重新拟合模型。
 当前发布版只包含 B-only 模型；A 组配比变量不在本发布包中。
 
-## 快速开始
+## 快速开始：无需第三方依赖
 
 ```bash
 git clone https://github.com/sjasonhhh/b-only-scaling-law.git
 cd b-only-scaling-law
 
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-
-python -m b_model.predict \
+python3 -m b_model.predict \
   --input examples/input.csv \
   --output predictions.csv
 ```
+
+预测入口只使用 Python 标准库，Python 3.9 及以上即可运行，不需要访问 PyPI，也不需要安装 `numpy` 或 `pandas`。
 
 Windows PowerShell 激活虚拟环境的命令是：
 
@@ -73,6 +71,18 @@ python -m b_model.predict \
   --output path/to/predictions.csv
 ```
 
+## 可选：完整评测环境
+
+只有需要运行 `pipeline.py`、完整评测或单元测试时，才需要安装可选依赖：
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+如果当前网络无法连接 PyPI，这一步可以跳过；基础预测不受影响。
+
 ## 开发者验证
 
 ```bash
@@ -89,7 +99,7 @@ python -m py_compile b_model/pipeline.py b_model/predict.py
 - `b_model/results/data_freeze_manifest.json`：数据哈希、角色、重叠检查和数据质量记录；
 - `b_model/results/B组数据迭代报告.md`：中文评测报告。
 
-原始实验附件没有随推理发布包上传；因此 `pipeline.py` 的完整重新拟合需要另行提供与冻结清单匹配的原始附件。按照本 README 进行预测只需要模型参数文件和 Python 依赖。
+原始实验附件没有随推理发布包上传；因此 `pipeline.py` 的完整重新拟合需要另行提供与冻结清单匹配的原始附件。按照本 README 进行预测只需要模型参数文件和 Python 标准库。
 
 ## 重要限制
 
