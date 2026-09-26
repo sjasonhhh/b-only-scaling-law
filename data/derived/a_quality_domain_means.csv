@@ -1,8 +1,0 @@
-quality_domain,q_domain_mean,source
-arxiv,0.6621691273889674,Q1 sample_scores.csv.gz
-book,0.6371943267020863,Q1 sample_scores.csv.gz
-c4,0.5573216539944594,Q1 sample_scores.csv.gz
-commoncrawl,0.5766921690540124,Q1 sample_scores.csv.gz
-github,0.5018910874401182,Q1 sample_scores.csv.gz
-stackexchange,0.5653861608421685,Q1 sample_scores.csv.gz
-wikipedia,0.550517090902377,Q1 sample_scores.csv.gz

@@ -1,8 +1,8 @@
 {
   "model_name": "A+B joint generalized scaling law",
   "created_on": "2026-09-26",
-  "target": "val_loss_or_A_macro_loss",
-  "prediction_relation": "B: B_only(N,D,Q) + gamma(N) * (A_M2(p) - A_M2(p_reference)); A: A_M2(p) + scale_offset(N)",
+  "target": "val_loss",
+  "prediction_relation": "L(N,D,Q,p) = L_B(N,D,Q) + gamma(N) * (A_M2(p) - A_M2(p_reference))",
   "data_join_policy": "A and B are not row-joined; p correction is an explicit cross-source adapter",
   "b_only_model": {
     "model_name": "B-only additive scaling law",
@@ -418,35 +418,8 @@
       ]
     }
   },
-  "a_adapter": {
-    "formula": "A_prediction = A_M2(p) + polynomial(log(N / reference_N))",
-    "reference_n": 0.001,
-    "offset_polynomial": [
-      -0.3612095046046219,
-      0.04033539820375141
-    ],
-    "p_gamma_model": {
-      "reference_n": 0.001,
-      "intercept": 1.0,
-      "slope": 0.0,
-      "clip_low": 0.0,
-      "clip_high": 1.0,
-      "maximum_interpolation_n": 0.06,
-      "high_n_gamma": 0.25,
-      "fit_roles": [
-        "fit",
-        "development_validation"
-      ],
-      "selection_note": "shrink p correction beyond the largest observed A development scale; selected by aggregate hidden feedback"
-    },
-    "offset_fit_roles": [
-      "fit",
-      "development_validation"
-    ],
-    "offset_fit_excludes_hidden_feedback_and_stress": true
-  },
   "uncertainty": {
     "b_base_residual_scale": 0.0002555419996966576,
-    "a_adapter_residual_scale": 0.0
+    "description": "Stored for reference; the public script returns point predictions only."
   }
 }
