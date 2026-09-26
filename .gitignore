@@ -3,3 +3,8 @@ __pycache__/
 *.py[cod]
 .venv/
 predictions.csv
+data/derived/a_q1_outputs.csv
+data/derived/b_standard.csv
+data/derived/*_feedback.csv
+data/derived/*_stress.csv
+data/derived/b_overlap.csv

@@ -1,0 +1,328 @@
+{
+  "created_on": "2026-09-25",
+  "purpose": "A+B joint scaling-law data preparation",
+  "source_hashes": [
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/domain_mapping_guide.csv",
+      "sha256": "4a4479f41b9f46116e688cd0c13ccdad4e687192fc1a38c4add690771ebff480",
+      "bytes": 1296
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_domain_summary.csv",
+      "sha256": "7696e26dc0ee809285ab3ebc5ee7da187fbe7e756a6303ee5e231d93c9221317",
+      "bytes": 1265
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/.tmp/q1_quality/sample_scores.csv.gz",
+      "sha256": "5f7ead6341247c058d358a56e87867a255ecdf6dedb7972a7fd43e0e63ab67af",
+      "bytes": 33559077
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/train_mixture_1m.csv",
+      "sha256": "04a32ef4ab594376bf90e11404c033668f887c351d6a03ad3744824c7296a2d8",
+      "bytes": 46412
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/train_pile_loss_1m.csv",
+      "sha256": "49a959aa07ce5c20831d5abe3a7896ff0cd90a398bd407c8913fd5588be0465a",
+      "bytes": 121898
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/test_mixture_1m.csv",
+      "sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8",
+      "bytes": 23537
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/test_pile_loss_1m.csv",
+      "sha256": "e027b1674f60140a65a87b5e4a59ab5f09dc33e8fd02c080682678074b160f53",
+      "bytes": 61175
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/test_mixture_60m.csv",
+      "sha256": "197267b7d6f15367e2f46c881e564c35b0d34e51b1754bb09d07e650cf8e1ce8",
+      "bytes": 23537
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/test_pile_loss_60m.csv",
+      "sha256": "8fe69d59ab7dd4fae4736459f4265ec93c7ed1ad1eca407346052560edc72b5b",
+      "bytes": 61827
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/test_mixture_1B.csv",
+      "sha256": "dd38052949c0a5f84165bdcb3ae3a331c7f07efd9bb83848bd579dfc4ce75a2c",
+      "bytes": 6393
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/test_pile_loss_1B.csv",
+      "sha256": "b2451e2b7fa15400688edc39e4d32f21ccbe0fb356e07d62a0e9ccddf247114f",
+      "bytes": 10639
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/est_mixture_10b.csv",
+      "sha256": "880c7ca1ebef470422e2b93d9bfcd0976db7db4e34ea57047518d95fe43327d1",
+      "bytes": 6113
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/est_pile_loss_10b.csv",
+      "sha256": "226457581f3f59e15e44d8f72dee31fa7492c821699725fef47627d82cf34c0d",
+      "bytes": 6467
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/est_mixture_70b.csv",
+      "sha256": "880c7ca1ebef470422e2b93d9bfcd0976db7db4e34ea57047518d95fe43327d1",
+      "bytes": 6113
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/A_data_value/regmix_tables/est_pile_loss_70b.csv",
+      "sha256": "d0883b2d1a44da9386a6d629a3623c724ee291cba1ac87b6d1079e5377307682",
+      "bytes": 6467
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+      "sha256": "529a59644b0f57bf3a76037838b614bfedc35e58bb26b93052e34ffc63e454c2",
+      "bytes": 111459
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/cerebras_training_log.csv",
+      "sha256": "178f878cad2cb31e4ec104c670553de23818197876d824a113fdb911125951a6",
+      "bytes": 89643
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/scaling_baseline.csv",
+      "sha256": "2272983ded93de35e05f9acbf95ebceedf43f283345e4be72b54fee94080391e",
+      "bytes": 1421
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/published_scaling_data.csv",
+      "sha256": "dd858c5e48610e28589340d5db023d6abfb31df597506789ccdfc6a546731bbd",
+      "bytes": 1967
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+      "sha256": "c7450ce0d67d8692535fef4709e60e2da60b2c184738bf96df160a4be0a33a7f",
+      "bytes": 13670
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+      "sha256": "880fd265ca3e1d9bc93b4559af7ed7c18f89040634266c50bae03d88486e0f3a",
+      "bytes": 17154
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv",
+      "sha256": "bda0d449f75c73bbd04141e5cffbf4bea7002073e34b7fa95a638570fa095ffe",
+      "bytes": 81268
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/supplementary_large_models.csv",
+      "sha256": "ee794c1c586ed33c485a9eb9a2a3d993790402b63297e9b2765a1387930e940e",
+      "bytes": 13400
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+      "sha256": "a240e210c5b37444356c28eea96c6cc36be79c29baae1621c2e08aff727ccfeb",
+      "bytes": 4744
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/open_model_family_metadata.csv",
+      "sha256": "641682f0ea6c46f25a0188ac723af44e0bc2e27c760e744743a15e97e29ee064",
+      "bytes": 1975
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/pythia_checkpoint_index.csv",
+      "sha256": "0f7f63535cbc1bbef5165776562e71401af9f762cfe02aaea30c824f45fbc9ed",
+      "bytes": 117698
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv",
+      "sha256": "19663f2f14d62af377377962ec8f794148450bfb278fdbeb2452f4641fe6a440",
+      "bytes": 14040
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv",
+      "sha256": "8e2b78cde966b0a3e8b6272935c3f3dcccc5a54e94bb7db79ded2fd8fdf5a124",
+      "bytes": 14040
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv",
+      "sha256": "8c803195d475d8ff320afd90887ae48cec6463f4d01a2264c6680611ed9db170",
+      "bytes": 14040
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv",
+      "sha256": "bb73b2852db183bee3d76c76f55e2bdcc292d7ed0881cb27966525b56afcafc0",
+      "bytes": 14040
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv",
+      "sha256": "cd0d718747fb6048cb474066dbf35f64ef852f59cba2886484cbdf14bc68a02f",
+      "bytes": 14040
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv",
+      "sha256": "e223b3d48bc4fef3cbc03fd583ff7aef87e474903d829f6c417310cb99fa7b5e",
+      "bytes": 14540
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv",
+      "sha256": "552f03249b69234009eb028b3296d6bd1b1cb3a52c0d3a84a669baa0e3179482",
+      "bytes": 14040
+    },
+    {
+      "file": "/Users/jasons-/Downloads/F题/real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv",
+      "sha256": "8814c8414fddc914444c74e6cf8da02e3e156a0d7fb8acea6c5da05e438bf054",
+      "bytes": 13540
+    }
+  ],
+  "derived_hashes": [
+    {
+      "file": "a16_quality_mapping_resolved.csv",
+      "sha256": "2dd974cb22d84451ece813977135e71f3dd31c130136dde8895f7bb20b93ef50",
+      "bytes": 2476
+    },
+    {
+      "file": "a_dev.csv",
+      "sha256": "bf0cdc5c5e8966535251c3963259e7ee009ec38581df3dc10235e0c05eea596e",
+      "bytes": 537208
+    },
+    {
+      "file": "a_feedback.csv",
+      "sha256": "8fee23ee1626bb494b0f19d7e339a446957134cf391cbc4787546ba7aa6a28fa",
+      "bytes": 62502
+    },
+    {
+      "file": "a_fit.csv",
+      "sha256": "0d8e4690cf6889260b5890c9d7ddb2cf7f5fc4d48dc21ac24b3450b02e772977",
+      "bytes": 532418
+    },
+    {
+      "file": "a_q1_outputs.csv",
+      "sha256": "fea321b0fbea978f2ddf3fbaa4cb5394a055960e13725287655d41e15ceb40f0",
+      "bytes": 1244751
+    },
+    {
+      "file": "a_quality_domain_means.csv",
+      "sha256": "067cffd258c6b713c55421149a7918c09b85c2205852c522019a6f934450b9b7",
+      "bytes": 393
+    },
+    {
+      "file": "a_stress.csv",
+      "sha256": "51fec662239085af053e7e523a0fa62f4dc4b84c434a58b7983e0f428a29bf3f",
+      "bytes": 115020
+    },
+    {
+      "file": "b_dev.csv",
+      "sha256": "7e52e4ff2ba56fc8663d5c2b7ffe82d700611c75f7f47a78f9504178d3556263",
+      "bytes": 1456333
+    },
+    {
+      "file": "b_feedback.csv",
+      "sha256": "840dc934169c9d366bcfadf30f71cdc0446d0f2a8ec55e9c76adc75501dee387",
+      "bytes": 26809
+    },
+    {
+      "file": "b_fit.csv",
+      "sha256": "c55d6a92d22033f40608613fcdaaf1fe4ed01d6746cc5cc927440906a2efb023",
+      "bytes": 380516
+    },
+    {
+      "file": "b_metadata.csv",
+      "sha256": "4b5b6333074c8e050425e12fc94175e99e8a881a8a56880810ee4ac7b6dec2db",
+      "bytes": 503102
+    },
+    {
+      "file": "b_overlap.csv",
+      "sha256": "9adc686500f25dc049c5bc293137c3184f48562c7ca8f637bb72dc2c60bb1fdd",
+      "bytes": 119936
+    },
+    {
+      "file": "b_standard.csv",
+      "sha256": "90bd649339915b4e01bd9fb2acc9369e5517b37b8759c5326bb8a2f3dd92feb0",
+      "bytes": 2595967
+    },
+    {
+      "file": "b_stress.csv",
+      "sha256": "7ba07bd352c4457af87d57d470646de24d24d9cfba9e682b2f1be0027e847d19",
+      "bytes": 613433
+    }
+  ],
+  "public_input_hashes": [
+    {
+      "file": "a_hidden_feedback_input.csv",
+      "sha256": "fdec60f772690f8bf495090174c1d4ee6041135f43778702c3b8ca1bc9bf5966",
+      "bytes": 12876
+    },
+    {
+      "file": "a_stress_input.csv",
+      "sha256": "ebe24d5d0559264702336a4c1f3b0db1dba5ef6e2777abc5c4aac07b85874506",
+      "bytes": 25316
+    },
+    {
+      "file": "b9_large_models_input.csv",
+      "sha256": "722e50086de7f8f3a848b8c1b9ede9105c052e98cfececbb8ba168c351935a66",
+      "bytes": 11650
+    },
+    {
+      "file": "b_hidden_feedback_input.csv",
+      "sha256": "0f332ce9c7539d84f5c2b8cfa0ddb142dae162510e9453ed6afef275c8f9545e",
+      "bytes": 6588
+    },
+    {
+      "file": "b_stress_input.csv",
+      "sha256": "617a152e747b5f0faee313a9549d673ca82f61b269ca97cc2c14aa31d3d3e572",
+      "bytes": 168891
+    }
+  ],
+  "a_summary": {
+    "q1_scores_file": "/Users/jasons-/Downloads/F题/.tmp/q1_quality/sample_scores.csv.gz",
+    "q1_domain_means": {
+      "arxiv": 0.6621691273889674,
+      "book": 0.6371943267020863,
+      "c4": 0.5573216539944594,
+      "commoncrawl": 0.5766921690540124,
+      "github": 0.5018910874401182,
+      "stackexchange": 0.5653861608421685,
+      "wikipedia": 0.550517090902377
+    },
+    "equal_domain_prior": 0.578738802332027,
+    "a_rows": 1214,
+    "a_unique_p_fingerprints": 832,
+    "a_repeated_p_rows": 701,
+    "a_inferred_mapping_domains": 11
+  },
+  "b_summary": {
+    "b_rows_with_targets": 8948,
+    "b_fit_rows": 1536,
+    "b_dev_rows": 5119,
+    "b_b7_overlap_rows": 360,
+    "b8_b7_condition_overlap_rows": 288,
+    "b_metadata_rows": 1536
+  },
+  "rules": {
+    "a_b_row_join": "forbidden",
+    "missing_a_N_or_D": "left_missing",
+    "q_a_inferred_domain_handling": "equal_domain_prior",
+    "b7_repeated_b6_rows": "overlap_not_scored",
+    "b8_condition_overlap": "stress_only_and_reported",
+    "a_shared_mixture_fingerprints": "shared_lineage_group_not_independent_rows"
+  },
+  "a_rows_by_role": {
+    "fit": 512,
+    "development_validation": 512,
+    "stress_extrapolation": 126,
+    "hidden_feedback": 64
+  },
+  "b_rows_by_role": {
+    "development_validation": 5119,
+    "stress_extrapolation": 1832,
+    "fit": 1536,
+    "overlap_not_scored": 360,
+    "hidden_feedback": 101
+  },
+  "public_input_counts": {
+    "a_hidden_feedback_input": 64,
+    "b_hidden_feedback_input": 101,
+    "a_stress_input": 126,
+    "b_stress_input": 1832,
+    "b9_large_models_input": 132
+  }
+}
